@@ -1,0 +1,155 @@
+@import url("reset.css");
+
+body{
+    background-color: #000080
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3%;
+    border: 5px solid black;
+}
+
+#header{
+    background: #b3b3b3;
+    width: 80%;
+    margin: 0 auto;
+    height: 50%;
+    border: 5px solid black;
+}
+
+h1{
+    font-size: 44px;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+ol{
+    list-style-type: lower-alpha;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+p{
+  font-size: 24px;
+  line-height: 1.2em;
+  margin-bottom: 5%;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+
+li{
+    font-size: 24px;
+  line-height: 1.2em;
+  margin-bottom: 5%;
+}
+
+#content-container{
+
+}
+
+#content{
+    width: 45%;
+    float: left;
+    padding: 5%;
+    background: #b3b3b3;
+}
+
+#sidebar{
+    background: #b3b3b3;
+    width: 35%;
+    float: left;
+    padding: 20px;
+    margin-left: 2%;
+}
+
+#footer{
+    margin-bottom: 20px;
+}
+
+h6{
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-top: auto;
+}
+
+#menu {
+	overflow: hidden;
+}
+#menu ul {
+	float: left;
+	position: relative;
+	left: 50%;
+}
+#menu li {
+	float: left;
+	position: relative;
+	right: 50%;
+}
+#menu a {
+	background: transparent;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 10px 15px;
+}
+#menu a:hover {
+	background: #b3b3b3;
+	color: #001f3f;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    color: black;
+}
+
+h2{
+  font-size: 1.25rem;
+	line-height: 1.2em;
+	font-style: italic;
+}
+
+@media screen and (max-width: 414px) {
+	.container {
+		width: 85%;
+	}
+	#content {
+		width: 90%;
+		float: none;
+    margin-right: 3%;
+    margin-left: 0%;
+	}
+	#sidebar {
+		width: 90%;
+		float: none;
+    margin-right: 3%;
+    margin-left: 0%;
+	}
+
+	#menu {
+		overflow: auto;
+		padding-bottom: 5%;
+	}
+	#menu ul {
+		float: none;
+		position: static;
+		left: auto;
+	}
+	#menu li {
+		float: none;
+		position: static;
+		right: auto;
+	}
+	#menu a {
+		text-align: center;
+	}
+}
