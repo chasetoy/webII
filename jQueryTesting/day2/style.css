@@ -40,6 +40,15 @@ section *:last-child {
 	margin-bottom: 0;
 }
 
+section a{
+	color: #eb7700;
+	text-decoration: none;
+}
+
+section a:hover{
+	text-decoration: underline;
+}
+
 
 @media screen and (max-width: 414px) {
 	#container {
