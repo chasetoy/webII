@@ -1,10 +1,12 @@
 $(function() {
-    $( "#accordion" ).accordion({
-        collapsible : true
-    });
-
-    $( '.tooltip' ).tooltip();
-    $('#tabs').tabs();
-    $('#datepicker').datepicker();
-    $('#controlgroup').controlgroup();
+   
 });
+
+$(window).on('load', function() {
+    $('#slider').nivoSlider({
+        effect: 'fade',
+        controlNav: false,
+        pauseOnHover: false,
+        randomStart: true
+    }); 
+}); 
