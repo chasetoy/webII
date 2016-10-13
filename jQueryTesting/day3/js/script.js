@@ -1,5 +1,5 @@
 $(function() {
-   
+   $('.fancybox').fancybox();
 });
 
 $(window).on('load', function() {

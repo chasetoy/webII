@@ -47,6 +47,12 @@ section a:hover {
 	text-decoration: underline;
 }
 
+#fancybox img{
+	width: 18%;
+	float: left;
+	margin: 0 1%;
+}
+
 
 
 @media screen and (max-width: 414px) {
