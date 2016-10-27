@@ -3,7 +3,7 @@
 body {
     font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #000;
-    background-color: #ccc;
+    background-color: #f98202;
 }
 
 #pic1{
@@ -11,7 +11,7 @@ body {
 }
 
 .altbg {
-	background-color: #002b75;
+	background-color: #eb0012;
 }
 #container {
     width: 60%;
