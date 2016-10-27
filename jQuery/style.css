@@ -1,0 +1,61 @@
+@import url("reset.css");
+
+body {
+    font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+    background-color: #ccc;
+}
+.altbg {
+	background-color: #002b75;
+}
+#container {
+    width: 60%;
+    margin: 3.125rem auto;
+}
+header {
+    margin-bottom: 1.5625rem;
+    padding: 1.5625rem;
+    border: 0.1875rem solid #000;
+    background-color: #fff;
+}
+header h1 {
+    font-size: 2.25rem;
+    line-height: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
+#content {
+    padding: 1.5625rem 1.5625rem 0 1.5625rem;
+    border: 0.1875rem solid #000;
+    background-color: #fff;
+}
+#content p {
+    font-size: 1.125rem;
+    line-height: 1.3em;
+    margin-bottom: 1.5625rem;
+}
+#content img {
+	margin-bottom: 1.5625rem;
+}
+#content a {
+	color: #eb0012;
+	text-decoration: none;
+}
+#content a:hover {
+	text-decoration: underline;
+}
+#content h1 {
+	font-size: 1.5rem;
+	line-height: 1.3em;
+	font-weight: bold;
+	margin-bottom: 1.5625rem;
+}
+#content .pullquote {
+	float: right;
+	background: #0050d4;
+	margin: 0.625rem 0 0.625rem 0.625rem;
+	padding: 0.625rem;
+	width: 12.5rem;
+	color: #fff;
+	font-style: italic;
+}
