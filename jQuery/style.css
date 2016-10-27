@@ -5,6 +5,11 @@ body {
     color: #000;
     background-color: #ccc;
 }
+
+#pic1{
+    padding-left: %30;
+}
+
 .altbg {
 	background-color: #002b75;
 }
