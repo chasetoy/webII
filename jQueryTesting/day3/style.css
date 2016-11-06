@@ -53,6 +53,39 @@ section a:hover {
 	margin: 0 1%;
 }
 
+nav {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 4%;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav li {
+	display: inline;
+	margin: 0 1%;
+}
+
+nav a {
+	color: black;
+	text-decoration: underline;
+	font-size: 1.25rem;
+	padding: 1% 1%;
+}
+
+nav a.current {
+	background: #ccc;
+	color: #000;
+}
+
+nav a:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+
 
 
 @media screen and (max-width: 414px) {
