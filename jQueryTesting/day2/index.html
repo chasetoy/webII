@@ -1,79 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>jQuery Day 2</title>
+	<title>A Little About jQuery</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
-	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="jquery-ui.css">
+	<link rel="stylesheet" href="nivo-slider.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="files/default/default.css">
+	<link rel="stylesheet" href="files/fancybox/jquery.fancybox.css">
 </head>
 <body>
 	<div id="container">
 		<header>
-			<h1>jQuery Day 2</h1>
+			<h1>A Little About jQuery</h1>
 		</header>
 		<section>
-			<h2 class="demoHeaders">Datepicker</h2>
-			<div id="datepicker"></div>
-			<h2 class="demoHeaders"></h2>
-<fieldset>
-	<legend></legend>
-	<div id="controlgroup">
-		<select id="car-type">
-			<option>laptop</option>
-			<option>desktop</option>
-			<option>tablet</option>
-			<option>phone</option>
-			<option>ipod</option>
-			<option>ipad</option>
-			<option>imac</option>
-		</select>
-		<label for="transmission-standard">HDD</label>
-		<input type="radio" name="transmission" id="transmission-standard">
-		<label for="transmission-automatic">SSD</label>
-		<input type="radio" name="transmission" id="transmission-automatic">
-		<label for="insurance">Insurance</label>
-		<input type="checkbox" name="insurance" id="insurance">
-		<label for="horizontal-spinner" class="ui-controlgroup-label"># of devices</label>
-		<input id="horizontal-spinner" class="ui-spinner-input">
-		<button>Buy Now!</button>
-	</div>
-</fieldset>
+			<div class="slider-wrapper theme-default"> 
+			<div id="slider" class="nivoSlider">
+				<img src="files/1.jpg">
+				<img src="files/2.jpg">
+				<img src="files/3.jpg">
+				<img src="files/4.jpg">
+				<img src="files/5.jpg">
+			</div>
+			
+
+			<p class="tooltip">jQuery, at its core, is a <a href="#" title="Document Object Module">DOM</a> manipulation library. The DOM is a tree-structure representation of all the elements of a Web page and jQuery simplifies the syntax for finding, selecting, and manipulating these DOM elements. For example, jQuery can be used for finding an element in the document with a certain property (e.g. all elements with an h1 tag), changing one or more of its attributes (e.g. color, visibility), or making it respond to an event (e.g. a mouse click).</p>
+
+			<div id="tabs">
+				<ul>
+					<li><a href="#tabs-1">Nivo Slider</a></li>
+					<li><a href="#tabs-2">Tooltips</a></li>
+					<li><a href="#tabs-3">Accordion</a></li>
+				</ul>
+				<div id="tabs-1">The Nivo Slider is a great way to display your images in a beautiful gallery. The Nivo Slider is available for download from github and can be used in your website no problem!</div>
+				<div id="tabs-2">Tooltips can be used in many different ways, the way that I found was most useful was in further explaining some more complex concepts without having to create a whole new section for the in depth explanation.</div>
+				<div id="tabs-3">The Accordion is a very useful thing when you are trying to contain a large ammount on information and still have an interactive sleek looking website.</div>
+			</div>
+
+			<br>
+			<br>
+
+			<p class="tooltip">jQuery is run using a javascript file which calls different <a href="#" title="a named procedure that performs a distinct service. The language statement that requests the function is called a function call.">function(s)</a> thats bring the website to life, such as these tooltips being used on this page. The function can be ran in two different ways. One being that the function is loaded as the page is which depending on the size of the page, can take some time. Or, the function can be loaded once the static web page has been fully loaded. This function is called using the<a href="#" title="window.onload=function;"> "onload"</a> function call.</p>
 			<div id="accordion">
-				<h3>Accordion 1</h3>
+				<h3>How Can I Use jQuery?</h3>
 				<div>
-					<p>Nulla posuere feugiat ipsum, id placerat sapien aliquet ac. Ut lacinia semper nulla, eu porta orci venenatis eget. Proin vitae neque in mauris egestas placerat sit amet eu dolor. Morbi vitae felis turpis. Suspendisse vehicula elementum leo sed accumsan. Donec consequat, arcu a lacinia elementum, orci est tincidunt nulla, ut cursus sem nulla ac elit.</p>
+					<p>jQuery can be implemented using the stylesheet or by downloading it and including it in the script tags at the bottom of the html code.</p>
 				</div>
-				<h3>Accordion 2</h3>
+				<h3>Is there anything I can't do with jQuery?</h3>
 				<div>
-					<p>Nulla posuere feugiat ipsum, id placerat sapien aliquet ac. Ut lacinia semper nulla, eu porta orci venenatis eget. Proin vitae neque in mauris egestas placerat sit amet eu dolor. Morbi vitae felis turpis. Suspendisse vehicula elementum leo sed accumsan. Donec consequat, arcu a lacinia elementum, orci est tincidunt nulla, ut cursus sem nulla ac elit.</p>
-				</div>
-				<h3>Accordion 3</h3>
-				<div>
-					<p>Nulla posuere feugiat ipsum, id placerat sapien aliquet ac. Ut lacinia semper nulla, eu porta orci venenatis eget. Proin vitae neque in mauris egestas placerat sit amet eu dolor. Morbi vitae felis turpis. Suspendisse vehicula elementum leo sed accumsan. Donec consequat, arcu a lacinia elementum, orci est tincidunt nulla, ut cursus sem nulla ac elit.</p>
-				</div>
-				<h3>Accordion 4</h3>
-				<div>
-					<p>Nulla posuere feugiat ipsum, id placerat sapien aliquet ac. Ut lacinia semper nulla, eu porta orci venenatis eget. Proin vitae neque in mauris egestas placerat sit amet eu dolor. Morbi vitae felis turpis. Suspendisse vehicula elementum leo sed accumsan. Donec consequat, arcu a lacinia elementum, orci est tincidunt nulla, ut cursus sem nulla ac elit.</p>
+					<p>Honestly, there really isn't much you CAN'T do with jQuery. The sky is pretty much the limit!</p>
 				</div>
 			</div>
-			<p class="tooltip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor bibendum risus, ac consectetur lectus tristique sed. Nunc fringilla elementum lorem molestie ullamcorper.<a href="#" title="Tooltip goes here"> Integer eu justo dolor</a>. Morbi enim diam, sodales quis egestas ac, aliquet nec ligula. Quisque tempus tristique imperdiet. Etiam sodales leo vitae lacus congue at bibendum orci consequat. In nec odio odio, quis iaculis purus. Pellentesque placerat cursus odio a fermentum.<a href="#" title="another Tooltip goes here"> Vestibulum ut malesuada nisl</a>. Aliquam nec odio nibh. Cras interdum, dolor eget sagittis ornare, augue nunc iaculis eros, in posuere nisi libero a sem. Nullam condimentum lobortis cursus. Mauris ac magna sapien, at vulputate nibh. Nulla vehicula, orci vitae auctor volutpat, nisi nisl dignissim augue, nec pellentesque nunc nunc ultrices erat. Nulla tincidunt mauris et enim porta cursus. Praesent urna nunc, posuere vel viverra eget, dapibus suscipit leo.</p>
-			<p class="tooltip">Nulla posuere feugiat ipsum, id placerat sapien aliquet ac. Ut lacinia semper nulla, eu porta orci venenatis eget. Proin vitae neque in mauris egestas placerat sit amet eu dolor. Morbi vitae felis turpis. Suspendisse vehicula elementum leo sed accumsan. Donec consequat, arcu a lacinia elementum, orci est tincidunt nulla, ut cursus sem nulla ac elit. <a href="#" title="third Tooltip goes here">Nunc vel dolor ante</a>. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec lacinia vulputate ligula non rhoncus. Sed faucibus consectetur augue ut dictum. Proin tempor consequat ligula vitae tincidunt. Phasellus id libero purus, nec vestibulum ante. <a href="#" title="fourth Tooltip goes here">Praesent eu magna odio. Suspendisse potenti</a>. Cras fringilla tortor id ante tristique vulputate. Suspendisse vestibulum dolor eleifend massa molestie vitae blandit nisl tristique. Phasellus vel dolor id ligula semper hendrerit. Integer at venenatis ipsum.</p>
-			<h2 class="demoHeaders">Tabs</h2>
-<div id="tabs">
-	<ul>
-		<li><a href="#tabs-1">First</a></li>
-		<li><a href="#tabs-2">Second</a></li>
-		<li><a href="#tabs-3">Third</a></li>
-	</ul>
-	<div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-	<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
-	<div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
-</div>
 		</section>
 	</div>
-	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery-3.1.1.mi	n.js"></script>
+	<script src="js/jquery.nivo.slider.pack.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

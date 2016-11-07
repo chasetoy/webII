@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Little About jQuery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+	<link rel="stylesheet" href="jquery-ui.css">
+	<link rel="stylesheet" href="nivo-slider.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="files/default/default.css">
+	<link rel="stylesheet" href="files/fancybox/jquery.fancybox.css">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>A Little About jQuery</h1>
+		</header>
+		<section>
+			<div class="slider-wrapper theme-default"> 
+			<div id="slider" class="nivoSlider">
+				<img src="files/1.jpg">
+				<img src="files/2.jpg">
+				<img src="files/3.jpg">
+				<img src="files/4.jpg">
+				<img src="files/5.jpg">
+			</div>
+			
+
+			<p class="tooltip">jQuery, at its core, is a <a href="#" title="Document Object Module">DOM</a> manipulation library. The DOM is a tree-structure representation of all the elements of a Web page and jQuery simplifies the syntax for finding, selecting, and manipulating these DOM elements. For example, jQuery can be used for finding an element in the document with a certain property (e.g. all elements with an h1 tag), changing one or more of its attributes (e.g. color, visibility), or making it respond to an event (e.g. a mouse click).</p>
+
+			<div id="tabs">
+				<ul>
+					<li><a href="#tabs-1">Nivo Slider</a></li>
+					<li><a href="#tabs-2">Tooltips</a></li>
+					<li><a href="#tabs-3">Accordion</a></li>
+				</ul>
+				<div id="tabs-1">The Nivo Slider is a great way to display your images in a beautiful gallery. The Nivo Slider is available for download from github and can be used in your website no problem!</div>
+				<div id="tabs-2">Tooltips can be used in many different ways, the way that I found was most useful was in further explaining some more complex concepts without having to create a whole new section for the in depth explanation.</div>
+				<div id="tabs-3">The Accordion is a very useful thing when you are trying to contain a large ammount on information and still have an interactive sleek looking website.</div>
+			</div>
+
+			<br>
+			<br>
+
+			<p class="tooltip">jQuery is run using a javascript file which calls different <a href="#" title="a named procedure that performs a distinct service. The language statement that requests the function is called a function call.">function(s)</a> thats bring the website to life, such as these tooltips being used on this page. The function can be ran in two different ways. One being that the function is loaded as the page is which depending on the size of the page, can take some time. Or, the function can be loaded once the static web page has been fully loaded. This function is called using the<a href="#" title="window.onload=function;"> "onload"</a> function call.</p>
+			<div id="accordion">
+				<h3>How Can I Use jQuery?</h3>
+				<div>
+					<p>jQuery can be implemented using the stylesheet or by downloading it and including it in the script tags at the bottom of the html code.</p>
+				</div>
+				<h3>Is there anything I can't do with jQuery?</h3>
+				<div>
+					<p>Honestly, there really isn't much you CAN'T do with jQuery. The sky is pretty much the limit!</p>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="js/jquery-3.1.1.mi	n.js"></script>
+	<script src="js/jquery.nivo.slider.pack.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

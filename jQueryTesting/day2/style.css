@@ -5,7 +5,7 @@ html {
 }
 body {
 	font-family: "Lora", "Helvetica Neue", Arial, sans-serif;
-	background: #002b75;
+	background: rgb(37,100,223);
 }
 #container {
 	width: 60%;
@@ -14,7 +14,7 @@ body {
 header {
 	background: #fff;
 	box-sizing: border-box;
-	border: 0.1875rem solid #eb7700;
+	border: 0.1875rem solid rgb(234,45,120);
 	padding: 2rem;
 	margin-bottom: 3rem;
 }
@@ -24,11 +24,12 @@ header h1 {
 	font-variant: small-caps;
 	font-weight: bold;
 	text-align: center;
+	color: rgb(37,100,223);
 }
 section {
 	background: #fff;
 	box-sizing: border-box;
-	border: 0.1875rem solid #eb7700;
+	border: 0.1875rem solid rgb(234,45,120);
 	padding: 2rem;
 }
 section p {
@@ -41,7 +42,7 @@ section *:last-child {
 }
 
 section a{
-	color: #eb7700;
+	color: rgb(234,45,120);
 	text-decoration: none;
 }
 
