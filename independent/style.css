@@ -1,0 +1,97 @@
+@import url("reset.css");
+
+html {
+	font-size: 100%;
+}
+body {
+	font-family: "Lora", "Helvetica Neue", Arial, sans-serif;
+	background: #002b75;
+}
+#container {
+	width: 60%;
+	margin: 3rem auto;
+}
+header {
+	background: #fff;
+	box-sizing: border-box;
+	border: 0.1875rem solid #eb7700;
+	padding: 2rem;
+	margin-bottom: 3rem;
+}
+header h1 {
+	font-size: 3rem;
+	line-height: 1.3em;
+	font-variant: small-caps;
+	font-weight: bold;
+	text-align: center;
+}
+section {
+	background: #fff;
+	box-sizing: border-box;
+	border: 0.1875rem solid #eb7700;
+	padding: 2rem;
+}
+section p {
+	font-size: 1.125rem;
+	line-height: 1.3em;
+	margin-bottom: 1.5rem;
+}
+section *:last-child {
+	margin-bottom: 0;
+}
+section a {
+	color: #eb7700;
+	text-decoration: none;
+}
+section a:hover {
+	text-decoration: underline;
+}
+
+#fancybox img{
+	width: 18%;
+	float: left;
+	margin: 0 1%;
+}
+
+nav {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 4%;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav li {
+	display: inline;
+	margin: 0 1%;
+}
+
+nav a {
+	color: black;
+	text-decoration: underline;
+	font-size: 1.25rem;
+	padding: 1% 1%;
+}
+
+nav a.current {
+	background: #ccc;
+	color: #000;
+}
+
+nav a:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+
+
+
+@media screen and (max-width: 414px) {
+	#container {
+		width: 90%;
+		margin: 2rem auto;
+	}
+}
+
