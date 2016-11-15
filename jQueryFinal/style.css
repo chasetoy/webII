@@ -8,7 +8,7 @@ body {
 	background: rgb(37,100,223);
 }
 #container {
-	width: 60%;
+	width: 80%;
 	margin: 3rem auto;
 }
 header {
@@ -49,6 +49,14 @@ section a{
 section a:hover{
 	text-decoration: underline;
 }
+
+#sidebar {
+    width: 50%;
+    height: 30px;
+    background-color: green;
+    float: left;
+}
+
 
 
 @media screen and (max-width: 414px) {

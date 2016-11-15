@@ -1,0 +1,64 @@
+@import url("reset.css");
+
+#container{
+  width: 80%;
+  padding-top: 1rem;
+  margin: 3rem auto;
+  background-color: white;
+}
+
+#h1 h1{
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1{
+  font-family: Helvetica, sans-serif;
+}
+
+body{
+  font-family: Helvetica, sans-serif;
+  background-color: grey;
+}
+
+#h2{
+  padding-left: 1rem;
+}
+
+#text{
+  border: 0.1875rem dotted green;
+  margin: 0 auto;
+  width: 50%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#test{
+  width: 90%;
+  border: 0.1875rem dashed rgb(234,45,120);
+  margin: 3rem auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#code{
+  margin: 1rem auto;
+  border: 0.1875rem solid red;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 90%;
+  font-size: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+pre{
+  white-space: pre-wrap;
+}
+
+h1{
+  font-size: 3rem;
+  font-family: monospace;
+}

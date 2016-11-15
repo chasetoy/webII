@@ -1,69 +1,125 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>A Little About Forms</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
-	<link rel="stylesheet" href="jquery-ui.css">
-	<link rel="stylesheet" href="nivo-slider.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="files/default/default.css">
-	<link rel="stylesheet" href="files/fancybox/jquery.fancybox.css">
-</head>
-<body>
-	<div id="container">
-		<header>
-			<h1>A Little About Forms</h1>
-		</header>
-		<section>
+  <head>
+    <meta charset="UTF-8">
+    <title>testing</title>
+    <link rel="stylesheet" href="test.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="h1"><h1>Forms 101</h1></div>
+    <div id="test">
+      <div id="h2"><h2>HTML 1</h2></div>
+      <div id="text">
+        <p> This is the first step of creating the form section where you, the developer, opens the form element and sets the action
+        to use your .php function which will handle the posting of the form and you set the method to <strong>"post"</strong> in order for the .php
+        file to run correctly.</p>
+      </div>
+      <br />
+      <div id="code">
+      <pre><code>
+        &lt;form action="testing2.php" method="post"&gt;<br/>
+      </code></pre>
+    </div>
+    </div>
 
-			<p class="tooltip">jQuery, at its core, is a <a href="#" title="Document Object Module">DOM</a> manipulation library. The DOM is a tree-structure representation of all the elements of a Web page and jQuery simplifies the syntax for finding, selecting, and manipulating these DOM elements. For example, jQuery can be used for finding an element in the document with a certain property (e.g. all elements with an h1 tag), changing one or more of its attributes (e.g. color, visibility), or making it respond to an event (e.g. a mouse click). jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. </p>
+    <div id="test">
+        <div id="h2"><h2>HTML 2</h2></div>
+        <div id="text">
+          <p> Now that you have the form element opened up we can go on
+          and create the fields we would like to have included in the form.
+          </p>
+        </div>
+        <br />
+      <div id="code">
+      <pre><code>
+        &lt;form action="testing2.php" method="post"&gt;<br />
+        First Name: &lt;input type="text" name="first_name"&gt;<br />
+        Last Name: &lt;input type="text" name="last_name"&gt;<br />
+        Email: &lt;input type="text" name="email"&gt;
+      </code></pre>
+    </div>
+    </div>
 
-			<div id="tabs">
-				<ul>
-					<li><a href="#tabs-1">Step 1</a></li>
-					<li><a href="#tabs-2">Step 2</a></li>
-					<li><a href="#tabs-3">Step 3</a></li>
-				</ul>
-				<div id="tabs-1">Downloading jQuery.</div>
-				<div id="tabs-2">Referencing jQuery.</div>
-				<div id="tabs-3">Implementing jQuery.</div>
-			</div>
+    <div id="test">
+        <div id="h2"><h2>HTML 3</h2></div>
+          <div id="text">
+            <p> Now it is time to add the submit button and close the element,
+            we <strong>set the name to "submit"</strong> [this is important when we write the PHP script]
+            and the <strong>value to "Submit"</strong> [also important for the php script]. And now your form is finished.</p>
+          </div>
+          <br />
+      <div id="code">
+      <pre><code>
+        &lt;form action="testing2.php" method="post"&gt;<br />
+        First Name: &lt;input type="text" name="first_name"&gt;<br />
+        Last Name: &lt;input type="text" name="last_name"&gt;<br />
+        Email: &lt;input type="text" name="email"&gt;<br />
+        Message:&lt;br&gt;&lt;textarea rows="5" name="message" cols="30"&gt;&lt;/textarea&gt;<br />
+	&lt;input type="submit" name="submit" value="Submit"&gt;<br />
+	&lt;/form&gt;
+      </code></pre>
+    </div>
+    </div>
 
-			<br>
-			<br>
+    <div id="test">
+        <div id="h2"><h2>Getting Your Files Organized and Create You .php File</h2></div>
+          <div id="text">
+            <p> We will now create the php script, this isn't to entirely difficult but it can take some time.
+            The important thing here is that you have a server to host the site and the php file from, because your computer can't.
+            But since we all have dreamhost accounts that's not a problem, you will just publish the index.html file that holds
+            your form and the php file we will create in the same folder so they can access each other so they will work.</p>
+          </div>
+          <br>
+          <br />
+    </div>
 
-			<p class="tooltip">jQuery is run using a javascript file which calls different <a href="#" title="a named procedure that performs a distinct service. The language statement that requests the function is called a function call.">function(s)</a> thats bring the website to life, such as these tooltips being used on this page. The function can be ran in two different ways. One being that the function is loaded as the page is which depending on the size of the page, can take some time. Or, the function can be loaded once the static web page has been fully loaded. This function is called using the<a href="#" title="window.onload=function;"> "onload"</a> function call. The jQuery library is a single JavaScript file containing all of its common DOM, event, effects, and Ajax functions. It can be included within a Web page by linking to a local copy or to one of the many copies available from public servers. jQuery has a content delivery network (CDN) hosted by MaxCDN. Google and Microsoft host it as well.</p>
-			<div id="accordion">
-				<h3>How Can I Use jQuery?</h3>
-				<div>
-					<p>jQuery can be implemented using the stylesheet or by downloading it and including it in the script tags at the bottom of the html code.</p>
-				</div>
-				<h3>Is there anything I can't do with jQuery?</h3>
-				<div>
-					<p>Honestly, there really isn't much you CAN'T do with jQuery. The sky is pretty much the limit!</p>
-				</div>
-				<div>
-				<h2>Send e-mail to someone@example.com:</h2>
+    <div id="test">
+        <div id="h2"><h2>PHP 1</h2></div>
+          <div id="text">
+            <p> Once you have created your php file, you will open the script with the <strong>&lt;?php</strong> and then
+            create the line below which will check to make sure your 'submit' field will run the 'post' method in the html
+            for the form.</p>
+          </div>
+      <div id="code">
+      <pre><code>
+        &lt;?php <br />
+        if(isset($_POST['submit'])){
+      </code></pre>
+    </div>
+    </div>
 
-				<form action="mailto:someone@example.com" method="post" enctype="text/plain">
-					Name:<br>
-					<input type="text" name="name"><br>
-					E-mail:<br>
-					<input type="text" name="mail"><br>
-					Comment:<br>
-					<input type="text" name="comment" size="50"><br><br>
-					<input type="submit" value="Send">
-					<input type="reset" value="Reset">
-				</form>
-			</div>
-		</section>
-	</div>
-	<script src="js/jquery-3.1.1.mi	n.js"></script>
-	<script src="js/jquery.nivo.slider.pack.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/script.js"></script>
-</body>
+    <div id="test">
+      <div id="h2"><h2>HTML 1</h2></div>
+      <div id="text">
+        <p> Now, we are creating variables that are populated using the names from the form fields that we gave
+        in our form elements in the html portion at the beginning. Notice that when you create a variable it starts with the "$",
+        in PHP this signifies the declaration of a variable.</p>
+      </div>
+      <br />
+      <div id="code">
+      <pre><code>
+        &lt;?php<br />
+              if(isset($_POST['submit'])){<br />
+              $to = "example.email@somewhere.com"; // this is your Email address<br />
+              $from = $_POST['email']; // this is the sender's Email address<br />
+              $first_name = $_POST['first_name'];<br />
+              $last_name = $_POST['last_name'];<br />
+              $subject = "Form submission";<br />
+              $subject2 = "Copy of your form submission";<br />
+              $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];<br />
+              $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];<br />
+
+      </code></pre>
+    </div>
+    </div>
+
+
+
+    <div id="h2">
+      <h2>Click <a href="testing.html">Here</a> For The Live Demo</h2>
+    </div>
+
+  </div>
+  </body>
 </html>
-
