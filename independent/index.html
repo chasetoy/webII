@@ -3,11 +3,26 @@
   <head>
     <meta charset="UTF-8">
     <title>testing</title>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="container">
       <div id="h1"><h1>Forms 101</h1></div>
+
+      <div id="test">
+          <div id="h2"><h2>Getting Started</h2></div>
+            <div id="text">
+              <p> We will begin by making <strong>THREE FILES</strong>:</p>
+              <ul>
+                <li><strong>index.html</strong>: this will be your webpage where the form can be hosted and filled out .</li>
+                <li><strong>send.php</strong>: this is the script that will run when the form is submitted to send the email.</li>
+                <li><strong>style.css</strong>: this will be used to style your website and the form as you see fit.</li>
+              </ul>
+            </div>
+            <br>
+            <br />
+      </div>
+
     <div id="test">
       <div id="h2"><h2>HTML 1</h2></div>
       <div id="text">
@@ -34,9 +49,9 @@
       <div id="code">
       <pre><code>
         &lt;form action="testing2.php" method="post"&gt;<br />
-        First Name: &lt;input type="text" name="first_name"&gt;<br />
-        Last Name: &lt;input type="text" name="last_name"&gt;<br />
-        Email: &lt;input type="text" name="email"&gt;
+          First Name: &lt;input type="text" name="first_name"&gt;<br />
+          Last Name: &lt;input type="text" name="last_name"&gt;<br />
+          Email: &lt;input type="text" name="email"&gt;
       </code></pre>
     </div>
     </div>
@@ -52,11 +67,11 @@
       <div id="code">
       <pre><code>
         &lt;form action="testing2.php" method="post"&gt;<br />
-        First Name: &lt;input type="text" name="first_name"&gt;<br />
-        Last Name: &lt;input type="text" name="last_name"&gt;<br />
-        Email: &lt;input type="text" name="email"&gt;<br />
-        Message:&lt;br&gt;&lt;textarea rows="5" name="message" cols="30"&gt;&lt;/textarea&gt;<br />
-	&lt;input type="submit" name="submit" value="Submit"&gt;<br />
+          First Name: &lt;input type="text" name="first_name"&gt;<br />
+          Last Name: &lt;input type="text" name="last_name"&gt;<br />
+          Email: &lt;input type="text" name="email"&gt;<br />
+          Message:&lt;br&gt;&lt;textarea rows="5" name="message" cols="30"&gt;&lt;/textarea&gt;<br />
+	  &lt;input type="submit" name="submit" value="Submit"&gt;<br />
 	&lt;/form&gt;
       </code></pre>
     </div>
@@ -90,7 +105,7 @@
     </div>
 
     <div id="test">
-      <div id="h2"><h2>HTML 1</h2></div>
+      <div id="h2"><h2>PHP 2</h2></div>
       <div id="text">
         <p> Now, we are creating variables that are populated using the names from the form fields that we gave
         in our form elements in the html portion at the beginning. Notice that when you create a variable it starts with the "$",
@@ -101,19 +116,58 @@
       <pre><code>
         &lt;?php<br />
               if(isset($_POST['submit'])){<br />
-              $to = "example.email@somewhere.com"; // this is your Email address<br />
-              $from = $_POST['email']; // this is the sender's Email address<br />
-              $first_name = $_POST['first_name'];<br />
-              $last_name = $_POST['last_name'];<br />
-              $subject = "Form submission";<br />
-              $subject2 = "Copy of your form submission";<br />
-              $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];<br />
-              $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];<br />
+                $to = "example.email@somewhere.com"; // this is your Email address<br />
+                $from = $_POST['email']; // this is the sender's Email address<br />
+                $first_name = $_POST['first_name'];<br />
+                $last_name = $_POST['last_name'];<br />
+                $subject = "Form submission";<br />
+                $subject2 = "Copy of your form submission";<br />
+                $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];<br />
+                $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];<br />
+                $headers = "From:" . $from;<br />
+                $headers2 = "From:" . $to;<br />
 
       </code></pre>
     </div>
     </div>
 
+    <div id="test">
+      <div id="h2"><h2>PHP 3</h2></div>
+      
+      <div id="text">
+        <p> This is where we finish up by using the <strong>mail()</strong> function
+          send two emails, one to the person that the forms belongs to, and another that sends a copy of the email
+          to the person who is using the form. We just fill those function parameters with the variables that we want them
+          to include. We then just issue an echo statement that lets the user know that the form has been submitted and
+          their message has been sent and they will get a copy for confirmation and close up the php script with <strong>?&gt;</strong>
+        </p>
+      </div>
+      <br />
+      <div id="code">
+      <pre><code>
+        &lt;?php<br />
+              if(isset($_POST['submit'])){<br />
+                $to = "example.email@somewhere.com"; // this is your Email address<br />
+                $from = $_POST['email']; // this is the sender's Email address<br />
+                $first_name = $_POST['first_name'];<br />
+                $last_name = $_POST['last_name'];<br />
+                $subject = "Form submission";<br />
+                $subject2 = "Copy of your form submission";<br />
+                $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];<br />
+                $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];<br />
+                $headers = "From:" . $from;<br />
+                $headers2 = "From:" . $to;<br />
+
+                mail($to,$subject,$message,$from,$headers);<br />
+                mail($from,$subject2,$message2,$to,$headers2); // sends a copy of the message to the sender<br />
+                echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";<br />
+                // You can also use header('Location: thank_you.php'); to redirect to another page.<br />
+              }<br />
+        ?&gt;<br />
+
+      </code></pre>
+    </div>
+    </div>
 
 
     <div id="h2">

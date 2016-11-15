@@ -1,52 +1,91 @@
 @import url("reset.css");
 
+#container{
+  width: 80%;
+  padding-top: 1rem;
+  margin: 3rem auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#h1 h1{
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+#h2 h2{
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1{
+  font-family: Helvetica, sans-serif;
+}
+
 body{
   font-family: Helvetica, sans-serif;
+  background-color: grey;
 }
 
-#header{
-  font-family: Helvetica, sans-serif;
-
+#h2{
+  padding-left: 1rem;
 }
 
-input[type=text], select {
-    width: 100%;
-	border: 2px solid green;
-    border-radius: 4px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    box-sizing: border-box;
+#text{
+
+  margin: 0 auto;
+  width: 50%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: white;
+  border-radius: 5px;
 }
 
-input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+#test{
+  width: 90%;
+  border: 0.1875rem solid blue;
+  margin: 3rem auto;
+  background-color: white;
+  border-radius: 5px;
+  padding-bottom: 1rem;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
+#code{
+  margin: 1rem auto;
+  border: 0.1875rem solid green;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 90%;
+  font-size: 1rem;
+  background-color: white;
+  border-radius: 5px;
 }
 
-div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+pre{
+  white-space: pre-wrap;
 }
 
-textarea {
-	width: 600px;
-	height: 120px;
-	border: 3px solid #cccccc;
-	padding: 5px;
-	font-family: Helvetica, sans-serif;
-	background-image: url(bg.gif);
-	background-position: bottom right;
-	background-repeat: no-repeat;
+h1{
+  font-size: 3rem;
+  font-family: monospace;
+}
+
+/* unvisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: blue;
 }
