@@ -11,6 +11,7 @@
 
       <div id="test">
           <div id="h2"><h2>Getting Started</h2></div>
+          <br />
             <div id="text">
               <p> We will begin by making <strong>THREE FILES</strong>:</p>
               <ul>
@@ -25,6 +26,7 @@
 
     <div id="test">
       <div id="h2"><h2>HTML 1</h2></div>
+      <br />
       <div id="text">
         <p> This is the first step of creating the form section where you, the developer, opens the form element and sets the action
         to use your .php function which will handle the posting of the form and you set the method to <strong>"post"</strong> in order for the .php
@@ -40,6 +42,7 @@
 
     <div id="test">
         <div id="h2"><h2>HTML 2</h2></div>
+        <br />
         <div id="text">
           <p> Now that you have the form element opened up we can go on
           and create the fields we would like to have included in the form.
@@ -58,6 +61,7 @@
 
     <div id="test">
         <div id="h2"><h2>HTML 3</h2></div>
+        <br />
           <div id="text">
             <p> Now it is time to add the submit button and close the element,
             we <strong>set the name to "submit"</strong> [this is important when we write the PHP script]
@@ -79,6 +83,7 @@
 
     <div id="test">
         <div id="h2"><h2>Getting Your Files Organized and Create You .php File</h2></div>
+        <br />
           <div id="text">
             <p> We will now create the php script, this isn't to entirely difficult but it can take some time.
             The important thing here is that you have a server to host the site and the php file from, because your computer can't.
@@ -91,6 +96,7 @@
 
     <div id="test">
         <div id="h2"><h2>PHP 1</h2></div>
+        <br />
           <div id="text">
             <p> Once you have created your php file, you will open the script with the <strong>&lt;?php</strong> and then
             create the line below which will check to make sure your 'submit' field will run the 'post' method in the html
@@ -106,6 +112,7 @@
 
     <div id="test">
       <div id="h2"><h2>PHP 2</h2></div>
+      <br />
       <div id="text">
         <p> Now, we are creating variables that are populated using the names from the form fields that we gave
         in our form elements in the html portion at the beginning. Notice that when you create a variable it starts with the "$",
@@ -133,7 +140,7 @@
 
     <div id="test">
       <div id="h2"><h2>PHP 3</h2></div>
-      
+      <br />
       <div id="text">
         <p> This is where we finish up by using the <strong>mail()</strong> function
           send two emails, one to the person that the forms belongs to, and another that sends a copy of the email
@@ -164,6 +171,73 @@
                 // You can also use header('Location: thank_you.php'); to redirect to another page.<br />
               }<br />
         ?&gt;<br />
+
+      </code></pre>
+    </div>
+    </div>
+
+    <div id="test">
+      <div id="h2"><h2>CSS 1</h2></div>
+      <br />
+      <div id="text">
+        <p>This is the style sheet that actually formats the form that we have just created, this is totally up to your
+        discretion as the designer of the website. This will be linked at the beginning of your website in the HTML5 code.</p>
+      </div>
+      <br />
+      <div id="code">
+      <pre><code>
+        @import url("reset.css");
+
+        body{
+          font-family: Helvetica, sans-serif;
+        }
+
+        #header{
+          font-family: Helvetica, sans-serif;
+
+        }
+
+        input[type=text], select {
+            width: 100%;
+        	border: 2px solid green;
+            border-radius: 4px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        textarea {
+        	width: 600px;
+        	height: 120px;
+        	border: 3px solid #cccccc;
+        	padding: 5px;
+        	font-family: Helvetica, sans-serif;
+        	background-image: url(bg.gif);
+        	background-position: bottom right;
+        	background-repeat: no-repeat;
+        }
 
       </code></pre>
     </div>

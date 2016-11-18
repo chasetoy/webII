@@ -167,6 +167,58 @@ article {
 	font-size: 1rem;
 	line-height: 1.2em;
 }
+
+body{
+          font-family: Helvetica, sans-serif;
+        }
+
+        #header{
+          font-family: Helvetica, sans-serif;
+
+        }
+
+        input[type=text], select {
+            width: 100%;
+        	border: 2px solid green;
+            border-radius: 4px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        #entry-content textarea {
+        	width: 40%;
+        	height: 120px;
+        	border: 3px solid #cccccc;
+        	padding: 5px;
+        	font-family: Helvetica, sans-serif;
+        	background-image: url(bg.gif);
+        	background-position: bottom right;
+        	background-repeat: no-repeat;
+        }
+
 @media screen and (max-width: 414px) {
 	.container {
 		width: 85%;

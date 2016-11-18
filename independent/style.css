@@ -6,6 +6,7 @@
   margin: 3rem auto;
   background-color: white;
   border-radius: 5px;
+  padding-bottom: 2rem;
 }
 
 #h1 h1{
@@ -29,6 +30,7 @@ body{
 
 #h2{
   padding-left: 1rem;
+  font-size: 2rem;
 }
 
 #text{
@@ -43,11 +45,12 @@ body{
 
 #test{
   width: 90%;
-  border: 0.1875rem solid blue;
+  border: 0.5rem solid navy;
   margin: 3rem auto;
   background-color: white;
   border-radius: 5px;
   padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 
 #code{
