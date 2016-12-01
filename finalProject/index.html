@@ -1,24 +1,76 @@
 <!DOCTYPE html>
+<html>
 <head>
-<title>Form submission</title>
-<link rel="stylesheet" href="style.css">
+    <title>jQuery Info</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="nivo-slider.css">
+    <link rel="stylesheet" href="files/default/default.css">
+    <link rel="stylesheet" href="files/fancybox/jquery.fancybox.css">
+
 </head>
+
+    <div id="header">
+        <h1></h1>
+    </div>
+
+    <br>
+
 <body>
+    <div id="container">
+        <div id="content-container">
+          <div id="sidebar">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="tech.html">Technical Skills</a>
+              <a href="edu.html">Education</a>
+              <a href="dev.html">Development Tools</a>
+              <a href="soft.html">Software</a>
+            </div>
+            <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
 
-<div id="header">
-	<h1>Example Form</h1>
-</div>
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
 
-<br>
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
 
-<div id="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet massa fringilla eros maximus faucibus id eget elit. Fusce vulputate ante libero. Maecenas lobortis sed lacus non ullamcorper. Ut sit amet arcu lacus. Aenean tortor metus, vestibulum at tempus ut, viverra eget enim. Donec gravida, tortor ut sodales molestie, risus felis bibendum diam, eu luctus orci erat non justo. Mauris dolor turpis, efficitur vitae egestas vestibulum, accumsan quis ante. Sed quis risus velit. Integer auctor ultricies odio, in consectetur ipsum fermentum non. Morbi commodo est vel arcu elementum gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec consequat suscipit sem ac tincidunt. Aliquam sagittis, purus eget laoreet mollis, tortor est consequat est, id gravida risus mauris in erat.
+          </div>
+            <div id="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis, augue ut viverra varius, quam quam pellentesque elit, at varius lacus ipsum ac nulla. Sed et efficitur enim, ut viverra augue. Etiam felis augue, blandit sed lectus et, dignissim pellentesque ex. Pellentesque rutrum nisi non sollicitudin bibendum. Integer a rhoncus urna. Donec sit amet condimentum tellus. Proin vel lacus leo.
 
-  Mauris a ligula non odio bibendum luctus. Donec malesuada aliquet elit, pulvinar pulvinar massa bibendum eget. Morbi mollis massa purus. Nullam quis turpis quam. Aenean mauris elit, laoreet et mi non, fringilla vehicula felis. Sed convallis elementum commodo. Maecenas eu mi id elit varius egestas ac id libero. Vivamus at lectus et ipsum faucibus fringilla quis eget turpis. Sed vitae varius tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor lectus vel nibh ullamcorper, a sodales sem luctus. Aenean et tortor risus. Mauris porttitor leo venenatis vulputate venenatis. Cras viverra porta vulputate. Donec ut diam mi.
-  </p>
-</div>
+                Sed viverra eros a dictum cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris quis enim sit amet metus tincidunt pulvinar. Donec massa orci, maximus a eros nec, aliquam blandit nisi. Aenean venenatis interdum nibh, vitae elementum est aliquet id. Cras elementum sit amet nulla ut eleifend. Donec venenatis elit a nibh finibus, vel volutpat odio ornare. Fusce varius eu dui eget aliquam. Phasellus aliquam sapien libero, sagittis accumsan elit mollis at. Proin mollis tempor nulla in pulvinar. Morbi rhoncus quis mauris sed iaculis.
+              </p>
 
-
-
+            </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="footer">
+            <h6>Chase Toy, Web Design Art 370</h6>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.mi	n.js"></script>
+	  <script src="js/jquery.nivo.slider.pack.js"></script>
+	  <script src="js/jquery-ui.min.js"></script>
+	  <script src="js/script.js"></script>
 </body>
 </html>

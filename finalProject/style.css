@@ -1,24 +1,139 @@
 @import url("reset.css");
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: navy;
 }
 
-#content{
+#container{
+    width: 960px;
     margin: 0 auto;
-    width: 85%;
-    border: 2px solid black;
-    border-radius: 5px;
+    
     padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #header{
+    background-image: url("files/code.jpg");
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 945px;
     margin: 0 auto;
-    align-self: center;
+    height: 531px;
+	  border: 10px solid white;
 }
 
-#header h1{
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+h1{
+    font-size: 44px;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-align: center;
 }
+
+ol{
+    list-style-type: lower-alpha;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+p{
+  font-size: 24px;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+}
+
+li{
+    font-size: 24px;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+}
+
+#content-container{
+
+}
+
+#content{
+    width: 65%;
+    float: left;
+    background: #d9d9d9;
+    border: 5px solid white;
+    margin-left: 15px;
+}
+
+#menu{
+
+}
+
+#sidebar{
+    background: #d9d9d9;
+    width: 25%;
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    border: 5px solid white;
+}
+
+.rider {
+	width: 250px;
+	margin: 0 auto 25px auto;
+    display: block;
+    padding-top: 20px;
+}
+
+#footer{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h6{
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-top: auto;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: navy;
+    width: 100%;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: orange;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: orange}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
